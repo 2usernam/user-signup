@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>User Signup</title>
+    </head>
+<body>
+    <h2>User Signup</h2>
+    <form method = "POST">
+       Username:
+        <input type="text" name="username"/>
+        <p class="error">{{username_error | safe}}</p>
+
+       Password: 
+       <input type="password" name="password" maxlenghth=20 minlength="3">
+       <p class="error">{{password_error | safe}}</p>
+
+       Verify Password: 
+       <input type="password" name="verify-password"/>
+       <p class="error">{{verify_error | safe}}</p>
+
+       Email(Optional):
+       <input type="text" name="email"/>
+       <p class="error">{{email_error | safe}}</p>
+
+       <input type="submit" value="submit"
+</body>
+</html>
